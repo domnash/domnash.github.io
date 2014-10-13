@@ -123,16 +123,15 @@
 <script type="text/javascript">
     (function() {
         var t   = document.createElement('img');
-        var ref = "http://" + window.location.host + window.location.pathname;
+        var ref = document.referrer;
         t.src  = 'https://afisha.yandex.ru/media/desktop/img/sh-m.png?from=dn&ref='+ref;
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(t);
     })();
-</script>
-<div style="display: none"><img src="https://afisha.yandex.ru/media/desktop/img/sh-m.png?from=db" /></div><script type="text/javascript" src="../theme/js/punycode.min.js" />
+</script><script type="text/javascript" src="../theme/js/punycode.min.js" />
 <script type="text/javascript">
     var disqus_shortname = 'domnash';
     var disqus_url = "http://" + punycode.toASCII(window.location.host) + window.location.pathname;
-    console.log(disqus_url);
+    window.console.log(disqus_url);
     (function () {
         var s = document.createElement('script'); s.async = true;
         s.type = 'text/javascript';
